@@ -148,3 +148,51 @@ body {
     padding: 10px 18px;
   }
 }
+.seo-text {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 40px 25px;
+  background-color: #fff7ee;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+}
+
+.seo-text h2 {
+  font-size: 32px;
+  color: #6b3f00; /* коричневий */
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.seo-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.seo-text a {
+  color: #c17e25;
+  text-decoration: none;
+}
+
+.seo-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .seo-text {
+    padding: 30px 20px;
+    margin: 50px 15px;
+  }
+
+  .seo-text h2 {
+    font-size: 26px;
+  }
+
+  .seo-text p {
+    font-size: 16px;
+  }
+}
