@@ -196,3 +196,8 @@ body {
     font-size: 16px;
   }
 }
+#first{
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
