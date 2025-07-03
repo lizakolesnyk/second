@@ -260,3 +260,22 @@ body {
   text-align: center;
   margin-top: 10px;
 }
+.tachograph-types {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.tachograph-types .text-part {
+  flex: 1 1 400px;
+}
+
+.tachograph-types .image-part img {
+  max-width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
