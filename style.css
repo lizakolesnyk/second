@@ -1,17 +1,17 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   font-size: 18px;
-  color: #111;
+  color: #2b2b2b;
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #f2f2f2;
 }
 
 #one, #two {
   padding: 40px 20px;
-  background-color: #fff8f1;
+  background-color: #e0e0e0;
   text-align: center;
-  color: #3a3a3a;
+  color: #222;
 }
 #one {
   margin-top: 50px;
@@ -21,9 +21,9 @@ body {
 }
 
 #one h1, #two h1 {
-  font-size: 60px;
+  font-size: 56px;
   font-weight: bold;
-  color: #6b3f00;
+  color: #1f1f1f;
   margin-bottom: 20px;
 }
 #one p, #two p {
@@ -35,17 +35,17 @@ body {
 
 .phone-btn, .phone-btn2 {
   display: inline-block;
-  padding: 12px 24px;
-  border: 1px solid #d68c3c;
-  color: #d68c3c;
+  padding: 12px 26px;
+  border: none;
+  background-color: #4c8edb;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 6px;
   font-size: 16px;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s;
 }
 .phone-btn:hover, .phone-btn2:hover {
-  background-color: #d68c3c;
-  color: white;
+  background-color: #2f6cb3;
 }
 
 .container, .contact-section {
@@ -55,8 +55,8 @@ body {
   padding: 50px 20px;
   max-width: 1200px;
   margin: 0 auto;
-  box-sizing: border-box;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .left-column, .right-column, .contact-info, .map-container {
@@ -65,8 +65,8 @@ body {
 }
 
 .left-column h2, .contact-info h2 {
-  color: #6b3f00;
-  font-size: 40px;
+  color: #1d1d1d;
+  font-size: 38px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -81,9 +81,13 @@ body {
   margin-bottom: 15px;
 }
 .service-item img {
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  filter: grayscale(40%) brightness(1.2);
+}
+.service-item span {
+  color: #333;
 }
 
 .contact-block {
@@ -95,7 +99,7 @@ body {
   margin-bottom: 5px;
 }
 .contact-block a {
-  color: #c17e25;
+  color: #4c8edb;
   text-decoration: none;
 }
 .contact-block a:hover {
@@ -112,7 +116,6 @@ body {
   border-radius: 8px;
 }
 
-/* Адаптация под мобильные */
 @media (min-width: 768px) {
   .left-column {
     flex: 1;
@@ -131,7 +134,6 @@ body {
     max-width: 600px;
   }
 }
-
 @media (max-width: 767px) {
   #one h1, #two h1 {
     font-size: 36px;
@@ -148,56 +150,113 @@ body {
     padding: 10px 18px;
   }
 }
+
 .seo-text {
   max-width: 900px;
   margin: 80px auto;
   padding: 40px 25px;
-  background-color: #fff7ee;
+  background-color: #e6ecf3;
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
   box-sizing: border-box;
 }
 
 .seo-text h2 {
   font-size: 32px;
-  color: #6b3f00; /* коричневий */
+  color: #2a2a2a;
   text-align: center;
   margin-bottom: 25px;
 }
-
 .seo-text p {
   font-size: 18px;
   line-height: 1.6;
-  color: #333;
+  color: #3a3a3a;
   margin-bottom: 20px;
   text-align: justify;
 }
-
 .seo-text a {
-  color: #c17e25;
+  color: #2f6cb3;
   text-decoration: none;
 }
-
 .seo-text a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .seo-text {
-    padding: 30px 20px;
-    margin: 50px 15px;
-  }
-
-  .seo-text h2 {
-    font-size: 26px;
-  }
-
-  .seo-text p {
-    font-size: 16px;
-  }
-}
-#first{
+#first {
   font-size: 20px;
   font-weight: bold;
-  color: #ffffff;
+  color: #2e2e2e;
+  background-color: #d0dae8;
+  padding: 20px;
+}
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 30px auto;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.details-button:hover,
+.back-button:hover {
+  background-color: #005fa3;
+}
+
+.details-content {
+  max-width: 800px;
+  margin: 50px auto;
+  font-size: 18px;
+  padding: 20px;
+  line-height: 1.6;
+}
+.details-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 30px auto;
+  background-color: #007acc;
+  color: white !important;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.details-button:hover {
+  background-color: #005fa3;
+}
+.image-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px auto;
+  padding: 20px;
+  max-width: 900px;
+}
+
+.image-block .tachograph img {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.image-block .truck img {
+  max-width: 550px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+
+.logo-caption {
+  font-size: 28px;
+  font-weight: bold;
+  color: #6a95b8; 
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  margin-top: 10px;
 }
